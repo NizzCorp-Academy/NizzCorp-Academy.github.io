@@ -4,16 +4,16 @@ const projects = [
         title: "EchoMind",
         description: "EchoMind is an intelligent chat application built to revolutionize customer support with the power of AI. Fine-tuned specifically for handling support-related conversations.",
         image: "https://raw.githubusercontent.com/NizzCorp-Academy/EchoMind_FrontEnd/refs/heads/main/src/assets/echomind-preview.png",
-        tags: ["web","mern"],
+        tags: ["web","mern","ai"],
         link: "https://nizzcorp-academy.github.io/EchoMind_FrontEnd"
     },
     {
         id: 2,
-        title: "Fitness Tracker App",
-        description: "Mobile application for tracking workouts, nutrition, and progress with charts.",
-        image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D3D&auto=format&fit=crop&w=800&q=80",
-        tags: ["mobile"],
-        link: "#"
+        title: "BusTrack",
+        description: "A Flutter-based mobile application for booking bus seats. This app simplifies the process of finding routes, selecting buses, and booking seats.",
+        image: "https://raw.githubusercontent.com/NizzCorp-Academy/BusTrack/refs/heads/main/docs/images/Bus%20Track.png",
+        tags: ["mobile","flutter"],
+        link: "https://nizzcorp-academy.github.io/BusTrack/"
     },
     {
         id: 3,
