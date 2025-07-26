@@ -1,11 +1,11 @@
 const projects = [
     {
         id: 1,
-        title: "E-commerce Platform",
-        description: "A full-stack e-commerce solution with payment integration and admin dashboard.",
-        image: "https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
-        tags: ["web"],
-        link: "#"
+        title: "EchoMind",
+        description: "EchoMind is an intelligent chat application built to revolutionize customer support with the power of AI. Fine-tuned specifically for handling support-related conversations.",
+        image: "https://raw.githubusercontent.com/NizzCorp-Academy/EchoMind_FrontEnd/refs/heads/main/src/assets/echomind-preview.png",
+        tags: ["web","mern"],
+        link: "https://nizzcorp-academy.github.io/EchoMind_FrontEnd"
     },
     {
         id: 2,
