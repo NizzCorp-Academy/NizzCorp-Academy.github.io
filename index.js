@@ -54,7 +54,7 @@ function renderProjects() {
                                 <span class="text-xs px-2 py-1 bg-[#F9F9F9] text-[#4B5563] rounded">${tag.toUpperCase()}</span>
                             `).join('')}
                         </div>
-                        <a href="${project.link}" class="inline-block bg-[#0A84FF] hover:bg-[#0077E6] text-white font-medium py-2 px-4 rounded-lg transition duration-300">
+                        <a href="${project.link}" target="_blank" class="inline-block bg-[#0A84FF] hover:bg-[#0077E6] text-white font-medium py-2 px-4 rounded-lg transition duration-300">
                             View Project
                         </a>
                     </div>
