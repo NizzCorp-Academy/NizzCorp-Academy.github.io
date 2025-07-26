@@ -1,1 +1,187 @@
-hi hello
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Academy Projects</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="projects.js"></script>
+    <script src="index.js" type="module"></script>
+
+</head>
+<body class="bg-[#F9F9F9]">
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <div class="logo text-2xl text-[#0A84FF] flex items-center">
+                        <i class="fas fa-laptop-code mr-2"></i>
+                        <span>Tech Academy</span>
+                    </div>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#home" class="nav-link text-[#1A1A1A] hover:text-[#0A84FF] active-link">Home</a>
+                    <a href="#projects" class="nav-link text-[#1A1A1A] hover:text-[#0A84FF]">Projects</a>
+                    <a href="#contact" class="nav-link text-[#1A1A1A] hover:text-[#0A84FF]">Contact</a>
+                </nav>
+                
+                <!-- GitHub Icon -->
+                <div class="hidden md:flex items-center">
+                    <a href="https://github.com" target="_blank" class="text-[#1A1A1A] hover:text-[#0A84FF]">
+                        <i class="fab fa-github text-2xl"></i>
+                    </a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button class="hamburger focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Navigation -->
+        <nav class="nav-menu md:hidden bg-white">
+            <div class="flex flex-col space-y-6 text-center">
+                <a href="#home" class="nav-link text-[#1A1A1A] hover:text-[#0A84FF] text-lg">Home</a>
+                <a href="#projects" class="nav-link text-[#1A1A1A] hover:text-[#0A84FF] text-lg">Projects</a>
+                <a href="#contact" class="nav-link text-[#1A1A1A] hover:text-[#0A84FF] text-lg">Contact</a>
+                <a href="https://github.com" target="_blank" class="nav-link text-[#1A1A1A] hover:text-[#0A84FF] text-lg">
+                    <i class="fab fa-github mr-2"></i> GitHub
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="py-20 bg-[#F9F9F9]">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-5xl font-semibold text-[#1A1A1A] mb-6">Welcome to Tech Academy Projects</h1>
+            <p class="text-xl text-[#4B5563] max-w-3xl mx-auto mb-10">Showcasing real-world tech projects by our students and teams</p>
+            <a href="#projects" class="bg-[#0A84FF] hover:bg-[#0077E6] text-white font-medium py-3 px-8 rounded-lg transition duration-300 inline-block">
+                Explore Projects
+            </a>
+            <div class="mt-16 max-w-4xl mx-auto">
+                <img src="https://illustrations.popsy.co/amber/developer-activity.svg" alt="Coding illustration" class="w-full h-auto fade-in">
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 bg-[#F9F9F9]">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-semibold text-[#1A1A1A] mb-4">Student Projects</h2>
+                <p class="text-lg text-[#4B5563] max-w-2xl mx-auto">Explore the innovative projects created by our talented students.</p>
+            </div>
+            
+            <!-- Search and Filter -->
+            <div class="mb-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <div class="w-full md:w-1/2">
+                    <input type="text" id="searchInput" placeholder="Search projects..." 
+                           class="w-full px-4 py-2 border border-[#E5E7EB] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0A84FF]">
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <button class="filter-btn px-4 py-2 bg-[#0A84FF] text-white rounded-lg" data-filter="all">All</button>
+                    <button class="filter-btn px-4 py-2 bg-white text-[#4B5563] border border-[#E5E7EB] rounded-lg hover:bg-[#F9F9F9]" data-filter="web">Web</button>
+                    <button class="filter-btn px-4 py-2 bg-white text-[#4B5563] border border-[#E5E7EB] rounded-lg hover:bg-[#F9F9F9]" data-filter="mobile">Mobile</button>
+                    <button class="filter-btn px-4 py-2 bg-white text-[#4B5563] border border-[#E5E7EB] rounded-lg hover:bg-[#F9F9F9]" data-filter="ai">AI</button>
+                </div>
+            </div>
+            
+            <!-- Projects Grid -->
+            <div id="projectsGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Project cards will be loaded here by JavaScript -->
+            </div>
+            
+            <!-- Load More Button -->
+            <div class="text-center mt-10">
+                <button id="loadMoreBtn" class="bg-white text-[#0A84FF] font-medium py-2 px-6 border border-[#0A84FF] rounded-lg hover:bg-[#0A84FF] hover:text-white transition duration-300">
+                    Load More Projects
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-2xl text-center">
+            <h2 class="text-3xl font-semibold text-[#1A1A1A] mb-6">Contact Us</h2>
+            <p class="text-lg text-[#4B5563] mb-10 max-w-lg mx-auto">
+                Interested in our programs? Here's how to reach us.
+            </p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="flex flex-col items-center">
+                    <div class="bg-[#0A84FF] bg-opacity-10 p-4 rounded-full mb-4">
+                        <i class="fas fa-envelope text-[#0A84FF] text-xl"></i>
+                    </div>
+                    <h3 class="font-medium mb-1">Email</h3>
+                    <p class="text-[#4B5563]">contact@techacademy.edu</p>
+                </div>
+                
+                <div class="flex flex-col items-center">
+                    <div class="bg-[#0A84FF] bg-opacity-10 p-4 rounded-full mb-4">
+                        <i class="fas fa-phone text-[#0A84FF] text-xl"></i>
+                    </div>
+                    <h3 class="font-medium mb-1">Phone</h3>
+                    <p class="text-[#4B5563]">(123) 456-7890</p>
+                </div>
+                
+                <div class="flex flex-col items-center">
+                    <div class="bg-[#0A84FF] bg-opacity-10 p-4 rounded-full mb-4">
+                        <i class="fas fa-map-marker-alt text-[#0A84FF] text-xl"></i>
+                    </div>
+                    <h3 class="font-medium mb-1">Location</h3>
+                    <p class="text-[#4B5563]">Silicon Valley, CA</p>
+                </div>
+            </div>
+
+            <div class="mt-12">
+                <h3 class="text-lg font-medium mb-4">Connect With Us</h3>
+                <div class="flex justify-center space-x-6">
+                    <a href="#" class="text-[#4B5563] hover:text-[#0A84FF] text-xl transition-colors">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="text-[#4B5563] hover:text-[#0A84FF] text-xl transition-colors">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#" class="text-[#4B5563] hover:text-[#0A84FF] text-xl transition-colors">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#F9F9F9] py-8 border-t border-[#E5E7EB]">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <div class="logo text-xl text-[#0A84FF] flex items-center justify-center md:justify-start">
+                        <i class="fas fa-laptop-code mr-2"></i>
+                        <span>Tech Academy</span>
+                    </div>
+                </div>
+                <div class="text-[#4B5563] mb-4 md:mb-0">
+                    © 2025 Tech Academy. All rights reserved.
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-[#4B5563] hover:text-[#0A84FF]">Privacy Policy</a>
+                    <a href="#" class="text-[#4B5563] hover:text-[#0A84FF]">Terms of Service</a>
+                    <a href="#" class="text-[#4B5563] hover:text-[#0A84FF]">FAQ</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
