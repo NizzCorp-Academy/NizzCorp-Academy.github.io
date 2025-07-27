@@ -3,7 +3,7 @@ const projects = [
         id: 1,
         title: "EchoMind",
         description: "EchoMind is an intelligent chat application built to revolutionize customer support with the power of AI. Fine-tuned specifically for handling support-related conversations.",
-        image: "https://raw.githubusercontent.com/NizzCorp-Academy/EchoMind_FrontEnd/refs/heads/main/src/assets/echomind-preview.png",
+        image: "https://raw.githubusercontent.com/NizzCorp-Academy/EchoMind_FrontEnd/main/docs/Thumbnail.png",
         tags: ["web","mern","ai"],
         link: "https://nizzcorp-academy.github.io/EchoMind_FrontEnd"
     },
