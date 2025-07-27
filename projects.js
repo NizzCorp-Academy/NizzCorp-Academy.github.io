@@ -12,16 +12,16 @@ const projects = [
         title: "BusTrack",
         description: "A Flutter-based mobile application for booking bus seats. This app simplifies the process of finding routes, selecting buses, and booking seats.",
         image: "https://raw.githubusercontent.com/NizzCorp-Academy/BusTrack/refs/heads/main/docs/images/Bus%20Track.png",
-        tags: ["mobile","flutter"],
+        tags: ["mobile","flutter","firebase"],
         link: "https://nizzcorp-academy.github.io/BusTrack/"
     },
     {
         id: 3,
-        title: "Sentiment Analysis Tool",
-        description: "AI-powered tool that analyzes text sentiment from customer reviews and feedback.",
-        image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
-        tags: ["ai"],
-        link: "#"
+        title: "Expense Tracker",
+        description: "Track your expenses in real time with Flutter & Firebase",
+        image: "https://raw.githubusercontent.com/NizzCorp-Academy/Expense-Tracker/main/docs/photo-1554224155-6726b3ff858f.jpeg",
+        tags: ["mobile","flutter","firebase"],
+        link: "https://github.com/NizzCorp-Academy/Expense-Tracker"
     },
     {
         id: 4,
