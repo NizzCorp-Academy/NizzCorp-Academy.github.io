@@ -21,7 +21,7 @@ const projects = [
         description: "Track your expenses in real time with Flutter & Firebase",
         image: "https://raw.githubusercontent.com/NizzCorp-Academy/Expense-Tracker/main/docs/photo-1554224155-6726b3ff858f.jpeg",
         tags: ["mobile","flutter","firebase"],
-        link: "https://github.com/NizzCorp-Academy/Expense-Tracker"
+        link: "https://nizzcorp-academy.github.io/Expense-Tracker/"
     },
     {
         id: 4,
