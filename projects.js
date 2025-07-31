@@ -29,6 +29,6 @@ const projects = [
         description: "QuickFix is a powerful Flutter application designed to help development teams track, manage, and resolve software bugs efficiently. With Firebase backend and BLoC state management, it's built for performance and scalability.",
         image: "https://nizzcorp-academy.github.io/Quickfix/images/image.webp",
         tags: ["web"],
-        link: "#"
+        link: "https://nizzcorp-academy.github.io/Quickfix/"
     }
 ];
